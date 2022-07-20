@@ -6,6 +6,7 @@ ul{
     padding-left: 0%;
     margin-left: 0%;
 }
+
 /*--------------------
      common codes 
 ----------------------*/
@@ -114,16 +115,17 @@ ul{
     border-radius: 1em;
 }
 
-#selected-item{
-    background: lightseagreen;
-    
-}
-#selected-item a{
-    color: #ffffff;
-}
+
 .menu-item a{
     text-decoration: none;
     color: black;
+}
+.selected-item{
+    background: lightseagreen;
+    
+}
+.selected-item a{
+    color: #ffffff;
 }
 .blogs{
     display: grid;
@@ -226,7 +228,54 @@ footer{
 }
 .fa-brands{
 color: lightseagreen;
+font-size: 2em;
+margin-right:1em ;
 }
+
+/* second website */
+
+.matches{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    justify-content: space-around;
+    gap:1em;
+
+
+ }
+ .match-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    border: 0.02em solid gray;
+    border-radius: .4em;
+    text-align: center;
+    margin-bottom: 1em;
+ }
+ .match{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    
+ }
+ .match h4{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4D4D4D;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+ }
+ .date{
+    margin-top: 0%;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4D4D4D;
+    font-weight: 400;
+ }
+ 
 
 /* media query */
 
@@ -245,13 +294,14 @@ color: lightseagreen;
     }
 
 
-    .banner, .blog-section, .blogs{
+    .banner, .blog-section, .matches, .blogs{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         row-gap: 1em;
         width: 100%;
         justify-content: center;
         align-items: center;
+        
         
     }
     .title{
@@ -312,11 +362,7 @@ color: lightseagreen;
         margin-left: auto; */
         
     }
-    main{
-        margin: 0%;
-        padding: 0%;
-        border: 3px solid greenyellow;
-    }
+
 
 }
 /* for tab */
@@ -353,9 +399,11 @@ color: lightseagreen;
         padding-right: 0;
         margin: 0;}
 
-     .blogs{
+     .blogs, .matches{
         display: grid;
-        grid-template-columns: repeat(2,1fr);}
+        grid-template-columns: repeat(2,1fr);
+        gap:1em;
+    }
         
     .side-menu{
         display: flex;
@@ -381,6 +429,7 @@ color: lightseagreen;
         height: 40px;
         width: 150px;
         margin: 2em 1em;
+        /* color:#161616; */
         /* margin-right: auto; */
         
         /* padding: 20px 30px; */
@@ -390,6 +439,13 @@ color: lightseagreen;
         border: 1px solid black;
         
         border-radius: 1em;
+    }
+    .selected-item{
+        background: lightseagreen;
+        
+    }
+    .selected-item a{
+        color: #ffffff;
     }
     #hidden-button{
         display: flex;
@@ -404,8 +460,10 @@ color: lightseagreen;
         display: grid;
         grid-template-columns: repeat(3,1fr);
         /* justify-content: space-around; */
-        gap:2em;
-        
+        gap:2em; 
     
     }
+
+  
 }
+ 
