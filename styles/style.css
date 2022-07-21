@@ -2,6 +2,7 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+
 ul{
     padding-left: 0%;
     margin-left: 0%;
@@ -10,11 +11,13 @@ ul{
 /*--------------------
      common codes 
 ----------------------*/
+
 .container{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
+
 .color-button{
     background: lightseagreen;
     border-radius: 1em;
@@ -24,6 +27,7 @@ ul{
 /*--------------------
      banner-starts 
 ----------------------*/
+
 .banner{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -40,27 +44,25 @@ ul{
     flex-direction: column;
     justify-content: center;
     color: #FFFFFF;
-    padding: 3em 2em 1em 4em;
-
-    
+    padding: 3em 2em 1em 4em;   
 }
+
 .title{
-    border: 2px solid darkorange ;
     font-weight: 700;
     font-size: 4em;
     line-height: 1.2em;
     margin-bottom: 0.5em;
-    margin-top: 0.8em;
-    
+    margin-top: 0.8em;  
 }
+
 .title-description{
     font-weight: 400;
     font-size: 1em;
     line-height: 1.6em;
     margin-top: 0%;
-    margin-bottom:2em;
-    
+    margin-bottom:2em;   
 }
+
 .button{
     display: flex;
     flex-direction: row;
@@ -69,31 +71,31 @@ ul{
     height: 56px;
     padding-left: 3em;
     justify-content: flex-start;
-    gap:1em;
-    
+    gap:1em; 
 }
+
 .fa-angle-right{
     color: #FFFFFF;
 }
+
 .player-img{
     
     width: 100%;
     padding-right: 0;
-    margin: 0%;
-    /* margin-top: 1em;
-    margin-bottom: 0%;
-     */
-
+    margin: 0%;   
 }
+
 /* --------------------
    blog section start 
 -----------------------*/
+
 .blog-section{
     display: grid;
     grid-template-columns:1fr 3fr;
     margin-bottom: 3em;
   
 }
+
 .side-menu{
     display: flex;
     flex-direction: column;
@@ -104,6 +106,7 @@ ul{
     margin-right:1em;
     padding: 1em;
 }
+
 .menu-item{
     text-align: center;
     padding: 1em 1.2em;
@@ -115,18 +118,21 @@ ul{
     border-radius: 1em;
 }
 
-
 .menu-item a{
     text-decoration: none;
     color: black;
 }
+
+/* selected page identifier */
+
 .selected-item{
-    background: lightseagreen;
-    
+    background: lightseagreen;  
 }
+
 .selected-item a{
     color: #ffffff;
 }
+
 .blogs{
     display: grid;
     grid-template-columns:repeat(3,1fr);
@@ -139,22 +145,23 @@ ul{
     height: auto;  
     border: 0.01em solid lightgray;
     border-radius: 1em;
-/* width: 80%; */
-
 }
+
 .blog img{
     width:100%;
 }
+
 .blog-details{
     padding: 1em;
 }
+
 .blog-button{
-    
     background-color: #FFFFFF;
     padding: 0.5em 1.2em;
     border-radius: 0.3em;
     border: 0.1em solid gray;
 }
+
 .time{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -162,70 +169,73 @@ ul{
     width: 50%; 
     gap: 1em;
 }
+
 .time p{
     margin: 0em ;
 }
+
 .fa-comment-dots{
     margin-left: 1em;
+    color: darkcyan;
 }
+
 #hidden-button{
-    /* display: flex;
-    justify-content: center; */
     display: none;   
 }
 
 /* footer */
+
 footer{
     background-color: #161616;
-    /* padding: auto; */
     margin-bottom: 0;
 }
+
 .footer{
     width:80%;
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 3em;
     text-align: center;
-
 }
+
 .footer p{
-    border: 2px solid deeppink ;
     color: #FFFFFF;
     font-weight: 600;
     font-size: 3em;
-    line-height: 2em;
+    line-height: 1.5em;
+    padding-top: 2em;
+    
 }
+
 .footer hr{
     border: 0.05em solid rgba(255, 255, 255, 0.1);
-    border: 2px solid deeppink ;
 }
+
  /* footer information */
+
 .footer-info ul{
-    border: 2px solid deeppink ;
     list-style: none;
     display: flex;
     justify-content: center;
     color: #B9B9B9; 
     font-weight: 500;
     font-size: 1em;
-    /* line-height: 1em; */
-    /* margin-bottom: 3em;  */
 }
+
 .footer-info ul li{
     margin-right: 1em;
-    margin-left: 1em;
-    /* margin-bottom: 2em; */
-    
+    margin-left: 1em; 
 }
 
 /* icons */
+
 .icons{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-content: space-around;
-    
-
 }
+
+/* social icons */
 .fa-brands{
 color: lightseagreen;
 font-size: 2em;
@@ -240,26 +250,27 @@ margin-right:1em ;
     justify-content: center;
     justify-content: space-around;
     gap:1em;
-
-
  }
+
  .match-card{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1em;
+    padding: 1.5em;
     border: 0.02em solid gray;
     border-radius: .4em;
     text-align: center;
     margin-bottom: 1em;
  }
+
+ /* match details */
  .match{
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    align-items: center;
-    
+    align-items: center;  
  }
+ 
  .match h4{
     font-weight: 400;
     font-size: 16px;
@@ -268,6 +279,7 @@ margin-right:1em ;
     margin-bottom: 0%;
     padding-bottom: 0%;
  }
+
  .date{
     margin-top: 0%;
     font-size: 16px;
@@ -281,18 +293,15 @@ margin-right:1em ;
 
 /* for mobile */
 @media only screen and (max-width:688px){
+
     .container{
-        border: 2px solid navy ;
         width: 95%;
         margin-left: auto;
         margin-right: auto;
         display: flex;
         flex-direction: column;
-        background-color: aqua;
         margin-top: 0em;
-
     }
-
 
     .banner, .blog-section, .matches, .blogs{
         display: grid;
@@ -300,50 +309,46 @@ margin-right:1em ;
         row-gap: 1em;
         width: 100%;
         justify-content: center;
-        align-items: center;
-        
-        
+        align-items: center;  
     }
+
     .title{
-        border: 2px solid darkorange ;
         font-weight: 700;
-        font-size: 3em;}
+        font-size: 3em;
+    }
+
     .player-img{
        max-width: 100%;
     }
     
     .side-menu{
-        /* border: 2px solid deeppink ; */
         display: flex;
         margin-left: auto;
         margin-right: auto;
         flex-direction: column;
         background-color: #FFFFFF;
         justify-content: center;
-        
-
     }
+
     .menu-item{
         display: flex;
         justify-content: center;
-        /* text-align: center; */
         align-items: center;
         padding: 1em 1.2em;
         margin-bottom: auto;
         margin-top: auto;
-        border: .03em solid #161616; 
+        border: .03em solid #1616165b; 
     }
 
     .footer{
     max-width: 100%;
-    /* margin-bottom: 2em; */
-    border: 2px solid red;
     }
+
     .footer p{
         margin-bottom: 1em;
     }
+
     .footer-info ul{
-        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -358,8 +363,6 @@ margin-right:1em ;
     }
     .footer-info ul li{
         padding-bottom: 1em;
-        /* margin-right: auto;
-        margin-left: auto; */
         
     }
 
@@ -378,9 +381,7 @@ margin-right:1em ;
         flex-direction: column;
     }
 
-
     .title{
-        border: 2px solid darkorange ;
         font-weight: 700;
         font-size: 2.5em;
         line-height: 1.2em;
@@ -393,16 +394,18 @@ margin-right:1em ;
         justify-content: flex-end;
         margin-bottom: 2em;
     }
+
     .player-img{
-    
         width: 100;
         padding-right: 0;
-        margin: 0;}
+        margin: 0;
+    }
 
      .blogs, .matches{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap:1em;
+        padding: 1.5em;
     }
         
     .side-menu{
@@ -416,11 +419,11 @@ margin-right:1em ;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        
         height: 100px;
         /* margin-right:3em;
         padding: 10em; */
     }
+
     .menu-item{
         display: flex;
         justify-content: center;
@@ -431,22 +434,23 @@ margin-right:1em ;
         margin: 2em 1em;
         /* color:#161616; */
         /* margin-right: auto; */
-        
         /* padding: 20px 30px; */
         /* margin-bottom: 4em;
         margin-top: 3em; */
         background-color: #FFFFFF;
         border: 1px solid black;
-        
         border-radius: 1em;
     }
+
     .selected-item{
-        background: lightseagreen;
-        
+        background: lightseagreen;  
     }
+
     .selected-item a{
         color: #ffffff;
     }
+
+     /* for view button */
     #hidden-button{
         display: flex;
         align-items: center;
@@ -459,9 +463,7 @@ margin-right:1em ;
     .icons{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        /* justify-content: space-around; */
         gap:2em; 
-    
     }
 
   
