@@ -20,10 +20,23 @@ ul{
 
 .color-button{
     background: lightseagreen;
-    border-radius: 1em;
+    border-radius: 0.5em;
     color: #FFFFFF;
+    font-weight: 700;
+    transition: transform 2s, background-color 3s;
 }
 
+.color-button:hover{
+    transform: scale(1.09) translateX(40px);
+    background-color: rgba(32, 178, 171, 0.524) ;
+    color: rgb(38, 255, 244);
+    
+}
+
+.color-button:hover .fa-angle-right{
+    color: rgb(77, 242, 234);
+    transform: translateX(10px) scale(1.2);
+}
 /*--------------------
      banner-starts 
 ----------------------*/
