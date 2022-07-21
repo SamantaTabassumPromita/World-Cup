@@ -26,6 +26,8 @@ ul{
     transition: transform 2s, background-color 3s;
 }
 
+ /* for transition effect */
+
 .color-button:hover{
     transform: scale(1.09) translateX(40px);
     background-color: rgba(32, 178, 171, 0.524) ;
